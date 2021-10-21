@@ -12,7 +12,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.10.0.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.3",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -36,7 +36,12 @@
       "privateWorkflows": []
     },
     "processOptions": {
-      "ignoredFiles": []
+      "ignoredFiles": [
+        "to delete\\login SPS.xaml",
+        "to delete/Log in.xaml",
+        "to delete/Logout.xaml",
+        "to delete/Submit Invoice - Copy (1).xaml"
+      ]
     },
     "fileInfoCollection": [
       {
