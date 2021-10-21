@@ -1,0 +1,21 @@
+﻿index,sn,Source,TAB_name,Input type,Ancher_Target_aaname, Ancher_parentid,Target_id,parentid,tableRow,Vairable,Value,name in page
+1,0,fixed,Header,Type_into, AP Vendor # ,invoice_header,invoice_header_apVendorNumber,,,AP_Vendor,882153,AP Vendor #
+2,1,fixed,Header,Type_into, Mdse Vendor # ,invoice_header,invoice_header_salesOrderNumber,,,Mdse_Vendor,25818,Mdse Vendor #
+3,2,fixed,Header,Select, Type ,invoice_header_terms,invoice_header_terms_type,,,Type,Basic,Type
+4,3,fixed,Header,Select, Basis Date Code ,invoice_header_terms,invoice_header_terms_basisDateCode,,,Basis_Date_Code,Invoice Date,Basis Date Code
+5,4,fixed,Header,Type_into, Discount % ,invoice_header_terms,invoice_header_terms_discountPercent,,,Discount,2,Discount %
+6,5,fixed,Header,Type_into, Discount Days ,invoice_header_terms,invoice_header_terms_discountDays,,,Discount_Days,30,Discount Days
+7,6,fixed,Header,Type_into, Net Days ,invoice_header_terms,invoice_header_terms_netDays,,,Net_Days,30,Net Days
+8,7,fixed,Summary,Select, Shipment/Order Status ,invoice_summary,invoice_summary_status,,,Shipment_Order_Status,Shipment Complete,Shipment/Order Status
+9,8,fixed,Summary,Select, Weight UOM ,invoice_summary,invoice_summary_weightUOM,,,Weight_UOM,Pounds,Weight UOM
+10,1,CSV,Header,Type_into, Invoice Number ,invoice_header,invoice_header_invoiceNum,,,Invoice_Number,,Invoice Number
+11,2,CSV,Header,Type_into, Internal Order # ,invoice_header,invoice_header_orderNumber,,,Internal_Order,,Internal Order #
+12,3,CSV,Header,Type_into, Carrier PRO/Freight Bill # ,invoice_header,invoice_header_proNumber,,,Carrier_PRO_Freight_Bill,,Carrier PRO/Freight Bill #
+13,4,CSV,Header,Type_into, Ship Date ,invoice_header,invoice_header_date,,,Ship_Date,,Ship Date
+14,5,CSV,Summary,Type_into, SCAC ,invoice_summary,invoice_summary_sCac,,,SCAC,,SCAC
+15,6,CSV,Summary,Type_into, Carrier Name ,invoice_summary,invoice_summary_carrierName,,,Carrier_Name,,Carrier Name
+16,7,CSV,Summary,Table_type_into,,,,invoice_summary_allowInfo_TABLE,2,Allowance_or_Charge_Amount,,Allowance or Charge Amount
+17,8,CSV,Summary,Type_into, Number of Cartons ,invoice_summary,invoice_summary_unitsShipped,,,Number_of_Cartons,,Number of Cartons
+18,9,CSV,Summary,Type_into, Weight ,invoice_summary,invoice_summary_weight,,,Weight,,Weight
+19,10,CSV,Summary,Table_type_into,,,,invoice_summary_allowInfo_TABLE,3,Allowance_or_Charge_Amount_3,,Allowance or Charge Amount 3
+20,3,CSV,Summary,Type_into, Bill of Lading # ,invoice_summary,invoice_summary_billOfLading,,,Bill_of_Lading,,Bill of Lading #
