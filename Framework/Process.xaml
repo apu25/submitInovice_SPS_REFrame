@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>721.6,1737.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>756,3164</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -95,7 +95,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="475.2,1672.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="670.4,3099.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtForQueue" />
       <Variable x:TypeArguments="x:String" Name="strDtForQueue" />
@@ -133,7 +133,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="628.8,22.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -141,9 +141,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="628.8,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_8">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="472,277.6" sap2010:WorkflowViewState.IdRef="Sequence_35">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="304,277.6" sap2010:WorkflowViewState.IdRef="Sequence_35">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -274,7 +274,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:FilterDataTable DataTable="[in_DT_Fields]" DisplayName="Duplicate DT_fields" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_8" OutputDataTable="[DT_Fields]" SelectColumnsMode="Keep">
+    <ui:FilterDataTable DataTable="[in_DT_Fields]" DisplayName="Duplicate DT_fields" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="628.8,22.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_8" OutputDataTable="[DT_Fields]" SelectColumnsMode="Keep">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
           <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
@@ -292,7 +292,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:FilterDataTable>
-    <ui:MultipleAssign DisplayName="AssignForRunTime" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+    <ui:MultipleAssign DisplayName="AssignParameterForRunTime" sap:VirtualizedContainerService.HintSize="628.8,288.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
@@ -355,12 +355,12 @@
       </ui:MultipleAssign.AssignOperations>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:MultipleAssign DisplayName="Assign DT_fields each PO" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+    <ui:MultipleAssign DisplayName="Assign DT_fields each PO" sap:VirtualizedContainerService.HintSize="628.8,22.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
@@ -468,10 +468,10 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <Sequence DisplayName="Create sub DT_fields" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Create sub DT_fields" sap:VirtualizedContainerService.HintSize="628.8,364.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -641,20 +641,20 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:FilterDataTable>
     </Sequence>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="interact in SPS portal" sap:VirtualizedContainerService.HintSize="433.6,1017.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="interact in SPS portal" sap:VirtualizedContainerService.HintSize="628.8,1851.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,800.8" sap2010:WorkflowViewState.IdRef="Sequence_37">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="595.2,1634.4" sap2010:WorkflowViewState.IdRef="Sequence_37">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="[&quot;https://commerce.spscommerce.com/fulfillment/transactions/document/&quot; &amp; SPS_internal_ID]" Version="V1" />
-            <Sequence DisplayName="New invoice in PO page" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="553.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="[&quot;https://commerce.spscommerce.com/fulfillment/transactions/document/&quot; &amp; SPS_internal_ID]" Version="V1" />
+            <Sequence DisplayName="New invoice in PO page" sap:VirtualizedContainerService.HintSize="553.6,22.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -768,7 +768,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
             </Sequence>
-            <uix:NCheckState Exists="{x:Null}" DisplayName="Check ready for Full entry 60s" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Timeout="60" Version="V1">
+            <uix:NCheckState Exists="{x:Null}" DisplayName="Check ready for Full entry 60s" sap:VirtualizedContainerService.HintSize="553.6,22.4" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Timeout="60" Version="V1">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="249.6,116.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
@@ -799,7 +799,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <Sequence DisplayName="TAB_Header" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence DisplayName="TAB_Header" sap:VirtualizedContainerService.HintSize="553.6,22.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="Input_text" />
                 <Variable x:TypeArguments="x:String" Name="test_aaname" />
@@ -995,7 +995,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEachRow>
             </Sequence>
-            <uix:NClick ClickType="Single" DelayAfter="[Int_Delay_After_click_TAB]" DisplayName="Click TAB Summary" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1">
+            <uix:NClick ClickType="Single" DelayAfter="[Int_Delay_After_click_TAB]" DisplayName="Click TAB Summary" sap:VirtualizedContainerService.HintSize="553.6,22.4" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/bb32faac76dfd888ec47d00244e0bee4e1a68078/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMzI4MzQ0OSwiZXhwIjoxNjMzMzI2NjQ5LCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.KAPDSgndhU5lm34hgmgIbVqN-JhnOzcbMgMA4nqZrxwb5Q8HxFUYgN5bZzhSoJTZmklg4mUXkrWz_ZTnsvydNK3Vm7B5N6QqzuEJXEEZQIFhkzoqwcyWHmH4XYWrSAz7TuKIRwDOIvTgjAtc81wPU0YeLhn13rZlShpIkhCnznpeWoIBnzICxzmQR2H9J28RC4jpDjW6BlUSZn9xHbFBdPiovv4FBAZudb70JPBba1Y8BGG0vCDBlzD2ohWVEDPwFbUtGXe7nsYtI5OXwHiBQVV8ZLQR4GyyR6NPujRFWnZ68XiOZs72B58cwzrF_nIuy591shWV3pvqU9l3-9R3EA&amp;lang=en-US#/transactions/dataEntry/1418515850/" DesignTimeRectangle="373, 416, 113, 49" ElementType="Text" FriendlyName="'Summary'" FullSelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aria-role='tab' id='invoice_summary_TAB' tag='A' /&gt;" Guid="c03beb3a-1fed-4c6f-9eb0-0ab2aee1d228" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAA1CAYAAAB/XKTQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAItSURBVHhe7ZY9TwJBFEX5l9qAmlibWKiNNsZYEVsaS4MaEzo7o4mRwk4TLYhQWQE/YuRtuMswWQQV35KbW5zA7My++Tgzb6cyGA6D4EJSCZFUQiSVEEklRFIJkVRCJJUQSSVEUgmRVEIklRBJJURSCZFUQiSVEEklRFIJkVRCJJUQSSVEUgmRVEIklRBJJaQUqb32WVirbuas1+rhdVDcVvwcd6kQ2mxPnt02tsJu436qnfg97lJN4Hp1P9x1iuvF33GX+tw6yE7q9uFl6BXUp9I/O9dhp7aZn+T+4CGcjMrN9ns4P5qkcDv5iG3EJ9+eW38vUdrP+h/HsnK60eJYeftxXdEYjhun2W/cL9rNmut/4S61P5yWkU54UaloE8dDGwhBikcZ9fgE5DGSxc/KG3tzx2AxgPWVjT26H1g/6WbxoJSLkoGFihfFni8qFeX8nWQxLWa99ZaVTWpRTNRjY8y6sBVKT8ZgpPcFG5f3KTVKkwqwEJj8Kkm1uBYHzJMaP8d/9OFJ6VLTBV0FqegjL4/r50k1sr5G7z0+lZN6DXepJiBOSak0fP/iFGZlT6lpPcqLSEXb+GSnbf4bV6k24ZvWVT5pgMUzsGCoww3TUypiYgwm5yLajN9Jjd/FxvSm9PTLCFIwNog3krpkcIrj7OONpC4JpHBLu7PSsheSSoikEiKphEgqIZJKiKQSIqmESCohkkqIpBIiqYRIKiGSSoikElLpfHSDYKIbvgC/n1/6+DoaNgAAAABJRU5ErkJggg==" InformativeScreenshot="521b73d35dddaaeb1b26249adc531c6b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector" />
               </uix:NClick.Target>
@@ -1006,7 +1006,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Allowances and Charges'" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Timeout="60" Version="V1">
+            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Allowances and Charges'" sap:VirtualizedContainerService.HintSize="553.6,22.4" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Timeout="60" Version="V1">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="249.6,116.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
                   <sap:WorkflowViewStateService.ViewState>
@@ -1043,7 +1043,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <Sequence DisplayName="TAB_Summary" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <Sequence DisplayName="TAB_Summary" sap:VirtualizedContainerService.HintSize="553.6,22.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="Input_text" />
                 <Variable x:TypeArguments="x:String" Name="test_aaname" />
@@ -1332,9 +1332,9 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEachRow>
             </Sequence>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="553.6,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_13">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,115.2" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="241.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_41">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1366,7 +1366,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <uix:NClick ClickType="Single" DelayAfter="[Int_Delay_After_save_send]" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1">
+            <uix:NClick ClickType="Single" DelayAfter="[Int_Delay_After_save_send]" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="553.6,22.4" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/de286f426eaba4260ba94340465d75f9eed36152/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMjk2NDQ2MiwiZXhwIjoxNjMzMDA3NjYyLCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.tUCGefO_4VnrbW4Bf1pLmfFfbN1Y7eCr1s4hdMu-52ckVFoewrGCVIfXqvJ2IYBssvR7OqOWD1bsX7YW5PkfzuecddM-KmD_Mrrj1XtUkdjwDOU8LhyFzagMsR8f4CRQkeoN0bn89-D_2k6CdQj-FleF5OwvroQ_w2hamiPb-ea1XOcob8uB0lMk_oxsizvRkK-8umaAHiKrvP-jcq3nfA6fOoxzS2HpCE6-c9u4GyFxRqj9yx9Mp29AnkhK7aRYXy9eY4iEb4ihFncJ_ljHmk0KS5p9mS0u-PPttQAK_fGSJ12F1sUKckoCoMVEom37v8uojgXBjT5r37yoHzwg-g&amp;lang=en-US#/transactions/batchProcess/" DesignTimeRectangle="1252, 339, 66, 38" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl id='data_entry_SAVE' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl id='data_entry_SAVE' tag='BUTTON' type='button' aaname=' Save ' check:text='Save' /&gt;" Guid="57ab75a0-f841-4307-9494-fd5b7c313bd6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAqCAYAAAAOGC2lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAITSURBVGhD7ZpPSwJBFMD7UJ36J9ElisosUaEgUAI72KG+iWcJL0HUSQpPgt/Aw+IHEPETuPeXMzszzsy+F2ROqPsGfuDuvFl5v33veXFrGsfApGExBI6Yj84n1B6fYfvoJFOUaw8yd9uFEfPy+gbHxRvI5cuQu6xkisNCReb+3vlKi7m6u4e98yJ6MAvsnl3Dbb2RFiNKCjuQJYQDFoPAYghYDAGLIWAxBCyGgMUQsBgCFkMQWEwfRuCtcR+JWz0CilFS4iE09b3WEKazW6OeHbeahBPTmwgtMI3a+P6KE0xMM4qlGKdiUrRhoMLMMq2m92IYtKwzqursljTfJZcXvyDhKsabL2j7iKqyxOkETZUhVZfEzJPvjkXE/NrfX5SAYgTpivi5tZRMUw3+nFLP09eqepxnYvcWILAYjSvIr57krVvLqiKnIvykVUVha03EJJhZoCtCzwuYQFfGIL9kKnkpU3622gRptWXxr2L8RPz5gIqx2kvG23tarBO/HMKJ8d/uDHxQzlvLVJSXqN1qfnXoPft+s/X3CgokZjZToknypp2lW8aKs2bPNOq7w1VjWs4VrTFCzcLjfkMgMesPiyFgMQQshoDFELAYAhZDwGIIWAwBiyFgMQSkmJ3TAuxflNBDm8xBviRzR8WUqnW5kWWqjae0GPEfPCw4SwgHKTFajrCGHdpkRLfYf0wUOGIYTQzfh/myBQxON2oAAAAASUVORK5CYII=" InformativeScreenshot="d1ed38aba621921315d2738ca151c79c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector">
                   <uix:TargetAnchorable.Anchors>
@@ -1383,7 +1383,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NCheckState Exists="{x:Null}" DisplayName="Check save is done 60s" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Timeout="60" Version="V1">
+            <uix:NCheckState Exists="{x:Null}" DisplayName="Check save is done 60s" sap:VirtualizedContainerService.HintSize="553.6,22.4" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Timeout="60" Version="V1">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="249.6,179.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
                   <sap:WorkflowViewStateService.ViewState>
@@ -1439,15 +1439,15 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="553.6,856" sap2010:WorkflowViewState.IdRef="CommentOut_12">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="518.4,536" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="518.4,777.6" sap2010:WorkflowViewState.IdRef="Sequence_40">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Interact in each Invoice" sap:VirtualizedContainerService.HintSize="476.8,443.2" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                  <Sequence DisplayName="Interact in each Invoice" sap:VirtualizedContainerService.HintSize="476.8,684.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="Allowance_or_Charge_Amount" />
                       <Variable x:TypeArguments="x:String" Name="Allowance_or_Charge_Amount_3" />
@@ -1463,26 +1463,9 @@
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:CommentOut DisplayName="Comment Out &quot;Save&quot;" sap:VirtualizedContainerService.HintSize="435.2,163.2" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut DisplayName="Comment Out test Save" sap:VirtualizedContainerService.HintSize="435.2,296" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                       <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:CommentOut>
-                    <ui:CommentOut DisplayName="Comment Out test Save" sap:VirtualizedContainerService.HintSize="435.2,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="524.8,217.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="271.2,217.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1528,20 +1511,20 @@
                       </ui:CommentOut.Body>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <ui:CommentOut DisplayName="Comment Out old ways" sap:VirtualizedContainerService.HintSize="435.2,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                    <ui:CommentOut DisplayName="Comment Out old ways" sap:VirtualizedContainerService.HintSize="435.2,193.6" sap2010:WorkflowViewState.IdRef="CommentOut_5">
                       <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="518.4,3890.4" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="241.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_31">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="TAB_Summay" sap:VirtualizedContainerService.HintSize="476.8,3406.4" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                          <Sequence DisplayName="TAB_Summay" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Sequence_30">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Default=" Invoice Number " Name="Ancher_Target_aaname" />
                               <Variable x:TypeArguments="x:String" Default="invoice_header_invoiceNum" Name="Target_id" />
@@ -1552,11 +1535,11 @@
                             </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:MultipleAssign DisplayName="Assign Inv info each PO-back" sap:VirtualizedContainerService.HintSize="435.2,22.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                            <ui:MultipleAssign DisplayName="Assign Inv info each PO-back" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
                               <ui:MultipleAssign.AssignOperations>
                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_50">
@@ -1656,7 +1639,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:MultipleAssign>
-                            <uix:NClick ClickType="Single" DisplayName="Click 'Header'" sap:VirtualizedContainerService.HintSize="435.2,22.4" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1">
+                            <uix:NClick ClickType="Single" DisplayName="Click 'Header'" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/bb32faac76dfd888ec47d00244e0bee4e1a68078/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMzI4MzQ0OSwiZXhwIjoxNjMzMzI2NjQ5LCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.KAPDSgndhU5lm34hgmgIbVqN-JhnOzcbMgMA4nqZrxwb5Q8HxFUYgN5bZzhSoJTZmklg4mUXkrWz_ZTnsvydNK3Vm7B5N6QqzuEJXEEZQIFhkzoqwcyWHmH4XYWrSAz7TuKIRwDOIvTgjAtc81wPU0YeLhn13rZlShpIkhCnznpeWoIBnzICxzmQR2H9J28RC4jpDjW6BlUSZn9xHbFBdPiovv4FBAZudb70JPBba1Y8BGG0vCDBlzD2ohWVEDPwFbUtGXe7nsYtI5OXwHiBQVV8ZLQR4GyyR6NPujRFWnZ68XiOZs72B58cwzrF_nIuy591shWV3pvqU9l3-9R3EA&amp;lang=en-US#/transactions/dataEntry/1418515850/" DesignTimeRectangle="187, 494, 99, 50" ElementType="Text" FriendlyName="'Header'" FullSelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aria-role='tab' id='invoice_header_TAB' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl name='app-fulfillment-6vgis5' tag='IFRAME' /&gt;&lt;webctrl aria-role='tab' tag='A' type='' aaname=' Header  ' check:text='Header' /&gt;" Guid="e22c0c7b-d9be-479b-8439-eea8cc71775e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAA1CAYAAABY8iU4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHISURBVHhe7dU9T8JQFMZxvqUsEEiYTVx0wc2xurLoZnxZurkZnRgYTSTYCJMT7Yc4coEjp8c2rYnUJ/EZ/gntvS1wf7ltK80yYVgRBTCiAEYUwIgCGFEAIwpgRAGMKIARBTCiAEYUwIgCGFEAIwpgRAGMKIARBTCiAEYUwIgCGFEAIwpgRAHsX6Ass6lcnvZkMLyVRcE4Wo2jTOITOej05GacP/8w6ku7G8lLmj//GxGlIqJURxTAoFF0bqjdOZbHZHN+mT7LWXdzXvP3W4wvvsYGw3OJhv0cikLt5uzGwrXht0ze7uVw9T32u5sIFiXMs4uxPt6Oh89Ho6f8tWaugkTx6/r4I9ksri683zl6rPe0oKF97eCy/gylKP3zuhPswuvCesyQh/bAHkEX3d7LoheNNxnkTil6PGl6nSL5MQWog+IjSg0Uu1Nseg99PNlF/AlK2aITZVvRO8XPmyXTwrnh2M71aGXvFA83c+8koriFtnM1fZn7R9dVfPftfWOvDRjXq/srShhXGJ2j8+rspH3XOAqrjiiAEQUwogBGFMCIAhhRACMKYEQBjCiAEQUwogBGFMCIAhhRACMKYEQBrJW8z4UhNZdPsvk8Z6eOBUwAAAAASUVORK5CYII=" InformativeScreenshot="a9a41b79e0c9f0de11c4ab63bf7f44ed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector" />
                               </uix:NClick.Target>
@@ -1667,7 +1650,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NClick>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="435.2,22.4" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;after save&quot;]">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;after save&quot;]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1675,7 +1658,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:MessageBox>
-                            <Sequence DisplayName="Header_type_into" sap:VirtualizedContainerService.HintSize="435.2,22.4" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                            <Sequence DisplayName="Header_type_into" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="Sequence_25">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1805,7 +1788,7 @@
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:ForEachRow>
                             </Sequence>
-                            <Sequence DisplayName="Header_Select" sap:VirtualizedContainerService.HintSize="435.2,177.6" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                            <Sequence DisplayName="Header_Select" sap:VirtualizedContainerService.HintSize="430.4,177.6" sap2010:WorkflowViewState.IdRef="Sequence_27">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="sd:DataTable" Name="DT_Header_Select" />
                               </Sequence.Variables>
@@ -1949,7 +1932,7 @@
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:ForEachRow>
                             </Sequence>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="TEST Box" sap:VirtualizedContainerService.HintSize="435.2,22.4" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[“Header typein is donw&quot;]">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="TEST Box" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[“Header typein is donw&quot;]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1957,7 +1940,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:MessageBox>
-                            <ui:CommentOut DisplayName="Test get attribute" sap:VirtualizedContainerService.HintSize="435.2,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                            <ui:CommentOut DisplayName="Test get attribute" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                               <ui:CommentOut.Body>
                                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,548.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -1974,7 +1957,7 @@
                                       <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/bb32faac76dfd888ec47d00244e0bee4e1a68078/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMzI4MzQ0OSwiZXhwIjoxNjMzMzI2NjQ5LCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.KAPDSgndhU5lm34hgmgIbVqN-JhnOzcbMgMA4nqZrxwb5Q8HxFUYgN5bZzhSoJTZmklg4mUXkrWz_ZTnsvydNK3Vm7B5N6QqzuEJXEEZQIFhkzoqwcyWHmH4XYWrSAz7TuKIRwDOIvTgjAtc81wPU0YeLhn13rZlShpIkhCnznpeWoIBnzICxzmQR2H9J28RC4jpDjW6BlUSZn9xHbFBdPiovv4FBAZudb70JPBba1Y8BGG0vCDBlzD2ohWVEDPwFbUtGXe7nsYtI5OXwHiBQVV8ZLQR4GyyR6NPujRFWnZ68XiOZs72B58cwzrF_nIuy591shWV3pvqU9l3-9R3EA&amp;lang=en-US#/transactions/dataEntry/" DesignTimeRectangle="447, 491, 102, 22" ElementType="Text" FriendlyName="'Invoice Number'" FullSelectorArgument="&lt;webctrl name='app-fulfillment-0sl1fb' tag='IFRAME' /&gt;&lt;webctrl aaname=' Invoice Number ' parentid='invoice_header' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl name='app-fulfillment-0sl1fb' tag='IFRAME' /&gt;&lt;webctrl aaname=' Invoice Number ' parentid='invoice_header' tag='SPAN' type='' check:text='Invoice Number' /&gt;" Guid="54ebf6ce-09af-4738-a594-c180a2c673c0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAAAaCAYAAABfA8lWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALlSURBVGhD7VXLahtBEJxP8sn4nySQpXu+wBZE+g7bQquLvyCQg1hZBh9DIBBL3iXk4hyEos48umemZ1a7hkRk10xDBebRU1VdK0dAqk5UCqojlYLqSKWgOlIpqI5UCqojlYLqSKWgOlL/NaiH6QWcnY9gtsWNjle5GJ3MDwvKEF3AeIUbJ60SZpcqqH/Mt5rqN88uM8ng6pRDpHqnQZ2oKKjARwqqbaWDGkFf/Vq9X9X7DkqbnsLDNoM+fqVOyCOM9Vqe68um+P877s+bAb9bacz7RWhMH/GA+ML9oLB/vDCa+wsTVcgVeaX3bbhmPV5xD+o+9Wp4OizHwvfAPdf6iOY9woM3BSUbAvH0+DGzZjhkkISGa89YMDwaLmxLKBUCXs4TFAUlNZmPxvAd42oKyvV4gR3xT2urkwZ+ZH6Rj/Ajldqp3hSUM4NiA2JOhMawlw0z2OPDCwflit8zpUOouMs046AUX/hG5DXiD4fKg9dV68dU3ceiivnwtQf1l0FxokZS+sLYFxkE5Q2GinRF8HTYCnhpULNgSJHXkwZl9hp91AV1OAAQigzF57iXYyOtDyXcDeTDgwwK6tN3RnC3Mcb6Wcl67bpiz/CpXnWOg/HfRvB7DYg0o64BfyPyGvG7oOjtFQa1wnW9HwWcF/Y0+oi0O4jf8l/CSzbUF69z3MsnfH0o4FYHNYcX27eGa3mnN1C9Q7jdBHfPJ5BXronP9RB/LyvwjTXkmttwMN5N4WnwEGl27zJ9eI+47B3LgZzTtX0n10E5/cfesPrx3L3R4KNCO0Hs9gcgPM8N0dUS95am0a73BdxgUM9e33KiDEhM1naP3VdnGhNYeueGbwg338M9r8dyreHK31eI+CQizQrU63Nxbb15YXyEfB6H8el5QC7Vq9Zau+xf+h4ijTU+KrUbiNfdHhLaD1G+7iCh/RBffvyChPZDfP72ExLaDzF72kJC+yE+fvoKCe2HEB/uIaHtuIc/1HlpSJZrHvoAAAAASUVORK5CYII=" InformativeScreenshot="afe3cff0b788defec2e5e97a7cee84b0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="FuzzySelector, Image" />
                                     </uix:NGetAttribute.Target>
                                   </uix:NGetAttribute>
-                                  <uix:NGetAttribute Attribute="id" DisplayName="Get Attribute 'Invoice Number'" sap:VirtualizedContainerService.HintSize="333.6,208" sap2010:WorkflowViewState.IdRef="NGetAttribute_2" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1">
+                                  <uix:NGetAttribute Attribute="id" DisplayName="Get Attribute 'Invoice Number'" sap:VirtualizedContainerService.HintSize="333.6,208" sap2010:WorkflowViewState.IdRef="NGetAttribute_2" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1">
                                     <uix:NGetAttribute.Result>
                                       <OutArgument x:TypeArguments="x:String">[test_id]</OutArgument>
                                     </uix:NGetAttribute.Result>
@@ -1997,7 +1980,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:CommentOut>
-                            <uix:NSelectItem DisplayName="Select Item 'Basis Date Code'" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="[Str_Basis_Date_Code]" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1">
+                            <uix:NSelectItem DisplayName="Select Item 'Basis Date Code'" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="[Str_Basis_Date_Code]" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1">
                               <uix:NSelectItem.Items>
                                 <scg:List x:TypeArguments="x:String" Capacity="3">
                                   <x:String> </x:String>
@@ -2014,8 +1997,14 @@
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
                               </uix:NSelectItem.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </uix:NSelectItem>
-                            <uix:NSelectItem DisplayName="Select Item 'Weight UOM'" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="[Str_Basis_Date_Code]" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1">
+                            <uix:NSelectItem DisplayName="Select Item 'Weight UOM'" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="[Str_Basis_Date_Code]" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Version="V1">
                               <uix:NSelectItem.Items>
                                 <scg:List x:TypeArguments="x:String" Capacity="3">
                                   <x:String> </x:String>
@@ -2032,8 +2021,14 @@
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
                               </uix:NSelectItem.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </uix:NSelectItem>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Carrier name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="435.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Text="[Input_text]" Version="V1">
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Carrier name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Text="[Input_text]" Version="V1">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/bb32faac76dfd888ec47d00244e0bee4e1a68078/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMzI4MzQ0OSwiZXhwIjoxNjMzMzI2NjQ5LCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.KAPDSgndhU5lm34hgmgIbVqN-JhnOzcbMgMA4nqZrxwb5Q8HxFUYgN5bZzhSoJTZmklg4mUXkrWz_ZTnsvydNK3Vm7B5N6QqzuEJXEEZQIFhkzoqwcyWHmH4XYWrSAz7TuKIRwDOIvTgjAtc81wPU0YeLhn13rZlShpIkhCnznpeWoIBnzICxzmQR2H9J28RC4jpDjW6BlUSZn9xHbFBdPiovv4FBAZudb70JPBba1Y8BGG0vCDBlzD2ohWVEDPwFbUtGXe7nsYtI5OXwHiBQVV8ZLQR4GyyR6NPujRFWnZ68XiOZs72B58cwzrF_nIuy591shWV3pvqU9l3-9R3EA&amp;lang=en-US#/transactions/dataEntry/1418515850/" DesignTimeRectangle="360, 597, 279, 39" ElementType="InputBox" FriendlyName="'INPUT invoice_summary_c…'" FullSelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl id='invoice_summary_carrierName' tag='INPUT' type='text' /&gt;" Guid="9b4bbc1a-43f2-44f0-8493-6587b18c2615" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARsAAAArCAYAAABIICw4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFxSURBVHhe7de7TgJRGIVR3/+pNExCR8IzCJUMEC0Fjm7DTCDBYkD/aq1kF3Nrv5x5agAFxAYoITZAiavYbPq+LZbL9tJ17Xk2MzObvPQjHUlPLo2xyYNuPm+r9brt9vu23e3MzCZv/92PdCQ9uQzOGJuU6HW1uvmxmdnUJTjpymCMTY4+/XZ78yMzs6nLCSddGYyxyb/W8NL7x4eZ2d0bWpKuDK5ik5eOx+P5DsB90pH05NfYfB4O5yuAx6Qnv8YG4C+JDVBCbIASYgOUEBughNgAJcQGKCE2QAmxAUqIDVBCbIASYgOUEBughNgAJcQGKCE2QAmxAUqIDVBCbIASYgOUEBughNgAJcQGKCE2QAmxAUqIDVBCbIASYgOUuBmbl65rp9PpfAXwmPQkXRmMsVksl+1tszlfATwmPUlXBmNsNn3fuvn85wUnHOBe6Uc6kp6kK4MxNpEHKVGOPvnXMjObuvQjHbkMTVzFBuB/tPYFxvfp3D1s5CgAAAAASUVORK5CYII=" InformativeScreenshot="0b2a44e2f3f5e4c024682e216875f519.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector">
                                   <uix:TargetAnchorable.Anchors>
@@ -2043,30 +2038,54 @@
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
                               </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </uix:NTypeInto>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Allowances 1" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="435.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="DebuggerApi" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Text="[Input_text]" Version="V1">
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Allowances 1" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="DebuggerApi" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Text="[Input_text]" Version="V1">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/bb32faac76dfd888ec47d00244e0bee4e1a68078/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMzI4MzQ0OSwiZXhwIjoxNjMzMzI2NjQ5LCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.KAPDSgndhU5lm34hgmgIbVqN-JhnOzcbMgMA4nqZrxwb5Q8HxFUYgN5bZzhSoJTZmklg4mUXkrWz_ZTnsvydNK3Vm7B5N6QqzuEJXEEZQIFhkzoqwcyWHmH4XYWrSAz7TuKIRwDOIvTgjAtc81wPU0YeLhn13rZlShpIkhCnznpeWoIBnzICxzmQR2H9J28RC4jpDjW6BlUSZn9xHbFBdPiovv4FBAZudb70JPBba1Y8BGG0vCDBlzD2ohWVEDPwFbUtGXe7nsYtI5OXwHiBQVV8ZLQR4GyyR6NPujRFWnZ68XiOZs72B58cwzrF_nIuy591shWV3pvqU9l3-9R3EA&amp;lang=en-US#/transactions/dataEntry/1418552287/" DesignTimeRectangle="943, 880, 368, 50" FriendlyName="'TD'" FullSelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl parentid='invoice_summary_allowInfo_TABLE' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='2' tag='TD' /&gt;" Guid="40eb4903-d113-4c93-a934-0b50c53a96a9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXQAAAA2CAYAAADXhGKAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAELSURBVHhe7dbBDYMwAARB+q+NBkIBEX8KMPErUIJXM9LJdgMrb9d1jX3fxzzNzGytPfst6GZmC0/QzcwiewV9PszMbP1t42deAFjPs9+CDrAwQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gIhX0L/nOT7HMeZpZmZr7dlvP3SAhf37PcYNjuqYObxgcRwAAAAASUVORK5CYII=" InformativeScreenshot="e3be7a6a20d2466ca2c3c1cfbb874854.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector" />
                               </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </uix:NTypeInto>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Allowances 3" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="435.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="DebuggerApi" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Text="[Input_text]" Version="V1">
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Allowances 3" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="DebuggerApi" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Text="[Input_text]" Version="V1">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/bb32faac76dfd888ec47d00244e0bee4e1a68078/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMzI4MzQ0OSwiZXhwIjoxNjMzMzI2NjQ5LCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.KAPDSgndhU5lm34hgmgIbVqN-JhnOzcbMgMA4nqZrxwb5Q8HxFUYgN5bZzhSoJTZmklg4mUXkrWz_ZTnsvydNK3Vm7B5N6QqzuEJXEEZQIFhkzoqwcyWHmH4XYWrSAz7TuKIRwDOIvTgjAtc81wPU0YeLhn13rZlShpIkhCnznpeWoIBnzICxzmQR2H9J28RC4jpDjW6BlUSZn9xHbFBdPiovv4FBAZudb70JPBba1Y8BGG0vCDBlzD2ohWVEDPwFbUtGXe7nsYtI5OXwHiBQVV8ZLQR4GyyR6NPujRFWnZ68XiOZs72B58cwzrF_nIuy591shWV3pvqU9l3-9R3EA&amp;lang=en-US#/transactions/dataEntry/1418552287/" DesignTimeRectangle="943, 931, 368, 48" FriendlyName="'TD'" FullSelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl parentid='invoice_summary_allowInfo_TABLE' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='3' tag='TD' /&gt;" Guid="8e71f94f-95d4-4aa5-81a0-6b042fc7bc8f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXQAAAA0CAYAAACaTMOLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD/SURBVHhe7dbBDYMwFAVB+i8tQhHXUEAEVTjhBiV4NSM9/w5WXsbfuq7XAWAy934v3+MYn30f1zUzs7l277cfOsDEHj/06xF0gDkJOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRAg6QISgA0QIOkCEoANECDpAhKADRDyCfp7nMDOz+be83tswM7PZt40fU4tIyhbdgEkAAAAASUVORK5CYII=" InformativeScreenshot="eca995d0ad018681da924e845ee0ddfb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector" />
                               </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </uix:NTypeInto>
-                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,305.6" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                               <ui:CommentOut.Body>
-                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,227.2" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,178.4" sap2010:WorkflowViewState.IdRef="Sequence_29">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[test_aaname &amp; test_id]" />
+                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[test_aaname &amp; test_id]" />
                                 </Sequence>
                               </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </ui:CommentOut>
-                            <ui:MultipleAssign DisplayName="Assign Input text" sap:VirtualizedContainerService.HintSize="435.2,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_12">
+                            <ui:MultipleAssign DisplayName="Assign Input text" sap:VirtualizedContainerService.HintSize="430.4,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_12">
                               <ui:MultipleAssign.AssignOperations>
                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_69">
@@ -2096,7 +2115,7 @@
                                 </scg:List>
                               </ui:MultipleAssign.AssignOperations>
                             </ui:MultipleAssign>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into1" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="435.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Text="[Input_text]" Version="V1">
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into1" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="430.4,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Text="[Input_text]" Version="V1">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/bb32faac76dfd888ec47d00244e0bee4e1a68078/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMzI4MzQ0OSwiZXhwIjoxNjMzMzI2NjQ5LCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.KAPDSgndhU5lm34hgmgIbVqN-JhnOzcbMgMA4nqZrxwb5Q8HxFUYgN5bZzhSoJTZmklg4mUXkrWz_ZTnsvydNK3Vm7B5N6QqzuEJXEEZQIFhkzoqwcyWHmH4XYWrSAz7TuKIRwDOIvTgjAtc81wPU0YeLhn13rZlShpIkhCnznpeWoIBnzICxzmQR2H9J28RC4jpDjW6BlUSZn9xHbFBdPiovv4FBAZudb70JPBba1Y8BGG0vCDBlzD2ohWVEDPwFbUtGXe7nsYtI5OXwHiBQVV8ZLQR4GyyR6NPujRFWnZ68XiOZs72B58cwzrF_nIuy591shWV3pvqU9l3-9R3EA&amp;lang=en-US#/transactions/dataEntry/" DesignTimeRectangle="433, 513, 279, 39" ElementType="InputBox" FriendlyName="'INPUT invoice_header_in…'" FullSelectorArgument="[String.Format(&quot;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl id='{0}' tag='INPUT' type='text' /&gt;&quot;, Target_id)]" Guid="1d813d34-fb7e-4599-a7b6-6ddb26abe08e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARsAAAArCAYAAABIICw4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFnSURBVHhe7de9asJgGIbhnv9BtaCCk0OOobiUWKWOVb/ylCQgdUrsO10XPEP+1psvLw2ggNgAJcQGKHEXm/5waLuua2+bTXtdr83MZi0NSUvSlNEUm9xcbbftfb9vp9OpfR6PZmazloakJWnKGJwpNqlQHj760MxsztKUtCWm2OTY40RjZs9cmpK2xBSb/GeNL3ydz2Zmizb2JG2Ju9jkhev1OtwBmC8tSVMexub7chmuAJZLUx7GBuDZxAYoITZACbEBSogNUEJsgBJiA5QQG6CE2AAlxAYoITZACbEBSogNUEJsgBJiA5QQG6CE2AAlxAYoITZACbEBSogNUEJsgBJiA5QQG6CE2AAlxAYoITZACbEBSvyJzdtm026323AFsFyakrbEFJtd17WPvh+uAJZLU9KWmGLTHw5ttd3+PnTCAZZIQ9KSNCVtiSk2kZupUI49+c8yM5uzNCQtGUMTd7EB+B+t/QBgNOLdgqi7uQAAAABJRU5ErkJggg==" InformativeScreenshot="b04c6741868c77627071a799212842b8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector">
                                   <uix:TargetAnchorable.Anchors>
@@ -2107,7 +2126,7 @@
                                 </uix:TargetAnchorable>
                               </uix:NTypeInto.Target>
                             </uix:NTypeInto>
-                            <ui:MultipleAssign DisplayName="Assign Input text" sap:VirtualizedContainerService.HintSize="435.2,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_13">
+                            <ui:MultipleAssign DisplayName="Assign Input text" sap:VirtualizedContainerService.HintSize="430.4,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_13">
                               <ui:MultipleAssign.AssignOperations>
                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_72">
@@ -2137,7 +2156,7 @@
                                 </scg:List>
                               </ui:MultipleAssign.AssignOperations>
                             </ui:MultipleAssign>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into2" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="435.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Text="[Input_text]" Version="V1">
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into2" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="430.4,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Text="[Input_text]" Version="V1">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/bb32faac76dfd888ec47d00244e0bee4e1a68078/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMzI4MzQ0OSwiZXhwIjoxNjMzMzI2NjQ5LCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.KAPDSgndhU5lm34hgmgIbVqN-JhnOzcbMgMA4nqZrxwb5Q8HxFUYgN5bZzhSoJTZmklg4mUXkrWz_ZTnsvydNK3Vm7B5N6QqzuEJXEEZQIFhkzoqwcyWHmH4XYWrSAz7TuKIRwDOIvTgjAtc81wPU0YeLhn13rZlShpIkhCnznpeWoIBnzICxzmQR2H9J28RC4jpDjW6BlUSZn9xHbFBdPiovv4FBAZudb70JPBba1Y8BGG0vCDBlzD2ohWVEDPwFbUtGXe7nsYtI5OXwHiBQVV8ZLQR4GyyR6NPujRFWnZ68XiOZs72B58cwzrF_nIuy591shWV3pvqU9l3-9R3EA&amp;lang=en-US#/transactions/dataEntry/" DesignTimeRectangle="433, 513, 279, 39" ElementType="InputBox" FriendlyName="'INPUT invoice_header_in…'" FullSelectorArgument="[String.Format(&quot;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl id='{0}' tag='INPUT' type='text' /&gt;&quot;, Target_id)]" Guid="1d813d34-fb7e-4599-a7b6-6ddb26abe08e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARsAAAArCAYAAABIICw4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFnSURBVHhe7de9asJgGIbhnv9BtaCCk0OOobiUWKWOVb/ylCQgdUrsO10XPEP+1psvLw2ggNgAJcQGKHEXm/5waLuua2+bTXtdr83MZi0NSUvSlNEUm9xcbbftfb9vp9OpfR6PZmazloakJWnKGJwpNqlQHj760MxsztKUtCWm2OTY40RjZs9cmpK2xBSb/GeNL3ydz2Zmizb2JG2Ju9jkhev1OtwBmC8tSVMexub7chmuAJZLUx7GBuDZxAYoITZACbEBSogNUEJsgBJiA5QQG6CE2AAlxAYoITZACbEBSogNUEJsgBJiA5QQG6CE2AAlxAYoITZACbEBSogNUEJsgBJiA5QQG6CE2AAlxAYoITZACbEBSvyJzdtm026323AFsFyakrbEFJtd17WPvh+uAJZLU9KWmGLTHw5ttd3+PnTCAZZIQ9KSNCVtiSk2kZupUI49+c8yM5uzNCQtGUMTd7EB+B+t/QBgNOLdgqi7uQAAAABJRU5ErkJggg==" InformativeScreenshot="b04c6741868c77627071a799212842b8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector">
                                   <uix:TargetAnchorable.Anchors>
@@ -2148,7 +2167,7 @@
                                 </uix:TargetAnchorable>
                               </uix:NTypeInto.Target>
                             </uix:NTypeInto>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="435.2,22.4" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Full entry come out&quot;]">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Full entry come out&quot;]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2156,7 +2175,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:MessageBox>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into test" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="435.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="DebuggerApi" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Text="[Input_text]" Version="V1">
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into test" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="430.4,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="DebuggerApi" ScopeIdentifier="6d3bc791-edc9-49f8-9f86-30698ab49c7e" Text="[Input_text]" Version="V1">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/bb32faac76dfd888ec47d00244e0bee4e1a68078/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMzI4MzQ0OSwiZXhwIjoxNjMzMzI2NjQ5LCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.KAPDSgndhU5lm34hgmgIbVqN-JhnOzcbMgMA4nqZrxwb5Q8HxFUYgN5bZzhSoJTZmklg4mUXkrWz_ZTnsvydNK3Vm7B5N6QqzuEJXEEZQIFhkzoqwcyWHmH4XYWrSAz7TuKIRwDOIvTgjAtc81wPU0YeLhn13rZlShpIkhCnznpeWoIBnzICxzmQR2H9J28RC4jpDjW6BlUSZn9xHbFBdPiovv4FBAZudb70JPBba1Y8BGG0vCDBlzD2ohWVEDPwFbUtGXe7nsYtI5OXwHiBQVV8ZLQR4GyyR6NPujRFWnZ68XiOZs72B58cwzrF_nIuy591shWV3pvqU9l3-9R3EA&amp;lang=en-US#/transactions/dataEntry/" DesignTimeRectangle="212, 597, 279, 39" ElementType="InputBox" FriendlyName="'INPUT invoice_header_ap…'" FullSelectorArgument="&lt;webctrl name='app-fulfillment-v93bt1' tag='IFRAME' /&gt;&lt;webctrl id='invoice_header_apVendorNumber' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='app-fulfillment-v93bt1' tag='IFRAME' /&gt;&lt;webctrl id='invoice_header_apVendorNumber' tag='INPUT' type='text' aaname='       *  AP Vendor #      Hidden Field Your viewing preferences are set to always hide this field in Full Form Entry. Manage this preference in document sourcing.              ' /&gt;" Guid="cdad8f90-ef73-4c6c-a203-c1d1c5a5044a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARsAAAArCAYAAABIICw4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFsSURBVHhe7dexasJgGIXh3v9FVVDBycFbaHUpRqWOVf9yiglInZL2m54HzpA/yfqSvDSAAmIDlBAboMRDbPZd19abTZstl+11sTAzG7U0JC1JU3pDbHI4X63a+27XjqdTOxyPZmajloakJWlKH5whNqnQ23b79EUzszFLU9KWGGKTz57ucHj6gpnZmKUpaUsMscl/Vv/A5/lsZjZpfU/SlniITR64Xq/3E4Dx0pI05Wlsvi6X+xXAdGnK09gA/DWxAUqIDVBCbIASYgOUEBughNgAJcQGKCE2QAmxAUqIDVBCbIASYgOUEBughNgAJcQGKCE2QAmxAUqIDVBCbIASYgOUEBughNgAJcQGKCE2QAmxAUqIDVBCbIASv2IzWy7b7Xa7XwFMl6akLTHEZr3ZtI/9/n4FMF2akrbEEJt917X5avVz0xcOMEUakpakKWlLDLGJHKZC+ezJf5aZ2ZilIWlJH5p4iA3A/2jtG1FW4sfXvjaqAAAAAElFTkSuQmCC" InformativeScreenshot="3faa801fa7264dc451e0b72baa098c2c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector">
                                   <uix:TargetAnchorable.Anchors>
@@ -2172,7 +2191,7 @@
                       </ui:CommentOut.Body>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -2226,7 +2245,7 @@
               </ui:CommentOut.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -2238,6 +2257,6 @@
         <uix:TargetApp Area="-4, -4, 1928, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAnGSURBVFhH3dh5UJN3GgdwQMR2hSKg4AEqilZoEZCAXBLCHQQhHHIL4rnj4rbT1t3t1m6tnXrFE7QqV4Rqdcejq3a0gozoSrkV5ZAcKAURgksThClXntnn9+YNeQlBadfuH31mvvO+yeD7fnye9/29SXR+t2Vvb6/jYDLNyN7UeK69ifEi3L5jbzrNCbckuI/vmRhb2U97y4j87f+t7PCEiTbzXJq/yU9siQ45KInhFkuig+sk0dynkihuH+73NUcFtYmjAh+KeIHFknD/A82nBYkJ1pYsW2NDI/owr78M9HR1+SwHj0sBnsfEMcE14hhuj5gXAOIIf2XCMav8ML4gDuOAKMxnJOJwP7kojFN9ie1ydI+jnTs5Fn3Y11M53qxZ18N8jzVHc1skUUH94qggEPMC1bgRIOLoIEiNDMWsZJP0437LNX+PzGxXewv68L++9HR1dA97ODk3x69qkEQFAwmODnHYOVWYwHC6g+MCvUEUguGuwL/xqz/kbOekp6Pz67o5VV//je3O70ZJ4kIb8LpSKIHYOSZQs4MTAVLIFQSpEIf61G+3Xxw5VX/SFPq0Eyv8X+l87GgbLYoJkSAOqDCBkQSpZcQjQA6Vl3VQGS98zRZvt1/EI+eccH2xbAmrLjKg4RHpUmQQjfttgMJgRIb61B10etuRPv3La6vvu+alYb4NNaHeivpwXxAiUMwEUrhxRkyPd9SI1TcIDUSYcsQgQpww2JNEIQllP8xytjWnGdpLd/Ik3cBtEYKr+I/K8QC1eIIG7IooknSS7pw2IOJEuMSIGDAhwqisJGGDEDsnRBgV0jm6e8IgT2ii4gHXOcuPGOjhrTleWWzieCw4vbFl4wcRUITIKjzYw1U+0EQQ1LgJjgbSOBF2VpwWB5L09SD+cItCtG2Loun9NGjcHA31qb5Qn+yF8YSGNSQe0JDiAY24bVzjDo8wTSkky0GY6gbCte4te7wWe9Cc0WUw18zIcmfkMeuv1/c7nEyFQ3G+cBuR93As9dgVIRkho3MiAty8BlpOHIH2WzdBKmqC7i7psKy7a/j5UyE8qyuElpt8EJ+JAkm2CzzOZUGLwAVa812g7bQrdHzjCs//6QqyC67Qc2k59F12g94rbgN3jjh+5WCj5Ylj7PeOy4KvN9ZYF6wHEt6OGDiLYy7FMTwIZcMjMj4eQfqDEHHNn22DzqoK6HzWCeWPZJB7Uw57/iWH3d/KIQf3yxpl0CmVQldzGbQVvQet59yh44I7dF/2gJ7rXvBzoRf0F3vB4C1MyQoYur0CBv/tBUN3vas2Rc5h0SxlkYf54dLzidYFG+TzEUdifyIVPlkXBNcC3aEyBMcUhtcR3jSke82f/RWei7FLXTLgX5FDQmYP8A70QNg+ZSL290DskR7Yi+B2qQy6O4Qgr/gQBkrYMHjHB4bvsmG4FLc/cEBRTuIDikrcVlJbmbQhN2HUBwyDBTOM5p/esH9ufhrMK1g3koBdqyE73AuKAtzgPiIbyA3wxxSQVldAO+L+nN8DoftejMrKvS8ghJE/CXrgKSJlTyugvzoFAf4AVZhqVfzUqeIoc8+Pz7IzMqR5CLSebjmvYH0RATKzJDsVPtgcBJcRWBLoAQ9wzE9OZFBj5WN3tOE0gdw9L2APjl0q7YReYSYMV3MZOAayylcNrPG7gcA5NI8C2iDogSaQxPNAAhzHLhb6u0FlYgS0lxTjNYdjzWDgaBgTR2CqxB7uwWtSDvLWYhi6Hz8WSOEYwGq/+whcSPMooB1i2qzy12oA18J8wVpI/WgVXPV1gYpNydCF1x65IXgHxgdyGcDg3S+o6zK7SA4yqQgGHmzSAGp0Twn8EYF2NI8COiKojwC1ZWFuChyMWQFlW9LgJ7wzd1+SQxhfDVR1baRz9JbgSMj7uy72gKxbCj8/SAfFGJwmkNOHQPWjb7K1mSNCei1PpYK2WGECdq+GovR1ZK2jgAQ2aqx0x5idU4W8/nIMUHVjaOCU6dUE2s3JT23VhlNlXl4K/GNfOnTSI47Yr+7ay4BBmFAccVahasQb1d3TCsSlpsrnR5YtY8QItJl9KqV2DkLGi6UgFbi56VBTfgvK8YKPOzIayIRRWwzBkcQcom+Stlv0TaLCMWGjgPedbRk3CQItEVikicL3YLYgZeS1jSANDhafGuro6BoiizATxgSqOqfKLrwkpF1dQ72i4wPKZWY8oA8VRbXPDQSqlxkEGs4+lbqfYF4V9oW/KO401yrI4rsVF+FX4bbkKhfqjraawe7qjf2KkbEyowGs4fCdmQs1eazw75xLnCVYI8fAyzITk3SDD43PHkN7p4xahMk6t4qP2N3KkGuOjJXcTORvJE8lUFPxGXYtgAZpwtS44Uq2rLM+e/SjjtSbnMWsmXnJVQSgiiaMmaTv+XC7uRZapV1Q1iCj1rkvLypDbgjyXmunFEpE9yDr5k7oraBHOwaohDGAlZsiZzvTLHXpW5kYmX3KPTpTkNxPABZ5yWBBY6h9LfE6/xF8WloA3zWVwaP2x9Dxny4qjbh/taEUPrmZBxzBe3CvJAxPrgkb3Tll2P0/CJZlOiw2VI+XWcZp7u4Wuckt2jDaYp6XRC1BTue2AufSxxB6ZQfmc/A9/zdwyt0CczKTYO/FKBiuevVoEYcfJNgtJ7cvcaM5Wmqynu6Mz0MztEE0M0NLpucmKnMiAaZnxIHTVzEgLV+JJ9cGGwu8d4Z1eIrBSz7ykzLeyrEwz0mqM89LVEwIw4hZbgKY5SDueBzMPhoLZ69FwFDV+OsdQdGdUwxWeD/89vDSl39pUpXRBk9H85zEOq0wkjE4RDGBiFtdEA0td4MZIO04ksFydl3+TjsH+vQTKGyyYZwzb0ZOkphCaWAIhLlPUKaqZMWD3ckYOP99GF57mt1Tj1OVoQq2iP/+wgi9X/TNHUv3Df0pUxE5PSehHjEKAqIwdFQg5j71+mQsJOAXJVlFIAK04ZRRVOFYy9h1iOMZ/eEX/vQxUro6ulM3eDiaZSXWMXGaQJOc+JEsOLkal5VQBDBxTODosWLn/vef4t5M9zY32RGSYZod/8QsJ76fwJgoVYyzYiH9LA9xZFnRQFFfiNj9wxXsJzWnWRkTviEmXPp6ulNTXN3e+ntgpmlWQrVpVpzcJFuNm5YdC0sFsdBVzlUwYYjCbnnLsGPVd/OWZZ7Y/rbbFIPX/AMmsyZZTTOa4m3D2nf7TIJJdhzfJCu+ELG1JsdjW/O+4/00UM7pGyhjtw6Ue9cOlLMLh6p8+M/qshPW82axli76DX8C1izyMJ80z9QQY4WxmTTXxM52sfHSZUsMnTB2GJtltkZW5FPJmAf/76d0dP4LBoHw5hzfa88AAAAASUVORK5CYII=" InformativeScreenshot="ae358e211b745e28f8554723103e9a46.png" Selector="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce'/&gt;" Url="[in_Config(&quot;urlTransactionsSPS&quot;).ToString]" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="433.6,56" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
+    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="628.8,56" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
   </Sequence>
 </Activity>
