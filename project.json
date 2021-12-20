@@ -3,16 +3,16 @@
   "description": "REFramework_test",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.11.3]",
-    "UiPath.System.Activities": "[21.10.0]",
-    "UiPath.Testing.Activities": "[1.4.2]",
-    "UiPath.UIAutomation.Activities": "[21.10.1]"
+    "UiPath.Excel.Activities": "[2.12.0-preview]",
+    "UiPath.System.Activities": "[21.12.0-preview]",
+    "UiPath.Testing.Activities": "[1.4.5]",
+    "UiPath.UIAutomation.Activities": "[21.12.0-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.10.0.0",
-  "projectVersion": "1.0.11",
+  "projectVersion": "1.0.12",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
